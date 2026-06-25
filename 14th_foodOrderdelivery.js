@@ -10,16 +10,18 @@ Declare an array with "Pizza", "Burger", "Pasta" and:
 */
 
 let food=["pizza","Burger","Pasta"];
-console.log(food);
+console.log(food); //[ 'pizza', 'Burger', 'Pasta' ]
 
 //Add "Sandwich" to the orders  
 let addFood=food.splice(1,0,"Sandwich");
-console.log(food);
+console.log(food); //[ 'pizza', 'Sandwich', 'Burger', 'Pasta' ]
 
 //Remove the first order 
 let remove=food.shift();
-console.log(remove);
+console.log(remove); //pizza
 
 //Display all orders as a comma-separated string 
 let string=food.join(" "+ ",");
-console.log(string);
+console.log(string); //Sandwich ,Burger ,Pasta
+console.log(typeof string);//string
+

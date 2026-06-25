@@ -28,5 +28,5 @@ console.log(song); //[ 'NewSong', 'Song3', 'Song2' ]
 //Convert playlist into a single string 
 let string = song.join(" ");
 console.log(string); //NewSong Song3 Song2
-console.log(typeof string);
+console.log(typeof string); //string
 

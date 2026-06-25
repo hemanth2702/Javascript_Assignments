@@ -13,28 +13,28 @@ Declare an array with "LoginFail", "CheckoutFail", "SearchFail" and:
 */
 
 let app=["LoginFail", "CheckoutFail", "SearchFail"];
-console.log(app);
+console.log(app); //[ 'LoginFail', 'CheckoutFail', 'SearchFail' ]
 
 //Add "ProfileFail"  
 app.push("ProfileFail");
-console.log(app);
+console.log(app); //[ 'LoginFail', 'CheckoutFail', 'SearchFail', 'ProfileFail' ]
 
 //Remove the first failed test  
 let remove = app.shift();
-console.log(app);
+console.log(app); //[ 'CheckoutFail', 'SearchFail', 'ProfileFail' ]
 
 //Create another copy of the failed tests array 
 let app2=[...app];
-console.log(app2);
+console.log(app2); //[ 'CheckoutFail', 'SearchFail', 'ProfileFail' ]
 
 //Extract only the first 2 failed tests 
 let extract = app.slice(0,2);
-console.log(extract);
+console.log(extract); //[ 'CheckoutFail', 'SearchFail' ]
 
 //Replace "CheckoutFail" with "PaymentFail"
 let replace= app.splice(1,1,"PaymentFail");
-console.log(app);
+console.log(app); //[ 'CheckoutFail', 'PaymentFail', 'ProfileFail' ]
 
 //Convert all failures into a single comma-separated string 
 let reverese = app.join(" "+",");
-console.log(reverese);
+console.log(reverese); //CheckoutFail ,PaymentFail ,ProfileFail

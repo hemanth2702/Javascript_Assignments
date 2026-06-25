@@ -11,17 +11,17 @@ Declare an array with "JavaScript", "Playwright", "Cypress" and:
 */
 
 let course=["JavaScript", "Playwright", "Cypress"];
-console.log(course);
+console.log(course); //[ 'JavaScript', 'Playwright', 'Cypress' ]
 
 //Remove the first course 
 course.shift();
-console.log(course);
+console.log(course); //[ 'Playwright', 'Cypress' ]
 
 //Add "TypeScript" at the beginning
 course.unshift("Typescript");
-console.log(course);
+console.log(course); //[ 'Typescript', 'Playwright', 'Cypress' ]
 
 
 //Extract only the last 2 courses 
 let lastCourse=course.slice(1,3);
-console.log(lastCourse);
+console.log(lastCourse); //[ 'Playwright', 'Cypress' ]

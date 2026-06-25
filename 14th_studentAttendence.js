@@ -10,17 +10,17 @@ Declare an array with "Ankit", "Riya", "Karan" and:
 */
 
 let student=["Ankit", "Riya", "Karan"];
-console.log(student);
+console.log(student); //[ 'Ankit', 'Riya', 'Karan' ]
 
 //Add "Neha" at the beginning 
 student.unshift("Neha");
-console.log(student);
+console.log(student); //[ 'Neha', 'Ankit', 'Riya', 'Karan' ]
 
 
 //Remove the last student from the list  
 let delete1 =student.pop();
-console.log(delete1);
+console.log(delete1); //Karan
 
 //Create a separate copy of the attendance list 
 let student2=[...student];
-console.log(student2);
+console.log(student2); //[ 'Neha', 'Ankit', 'Riya' ]

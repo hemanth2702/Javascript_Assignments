@@ -23,5 +23,5 @@ console.log(cart.reverse());  //[ 'keyboard', 'Mouse', 'laptop', 'Mobile' ]
 //Convert all cart items into a single string separated by " | " 
 let string= cart.join(" "+ " | ");
 console.log(string); //keyboard  | Mouse  | laptop  | Mobile
-console.log(typeof string);
+console.log(typeof string); //string
 
